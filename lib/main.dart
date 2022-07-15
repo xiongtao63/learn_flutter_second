@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:learn_flutter_second/demo/basic_demo.dart';
+import 'package:learn_flutter_second/demo/localizations_demo.dart';
 import 'package:learn_flutter_second/drawer/drawer_demo.dart';
 import 'package:learn_flutter_second/routes/routes.dart';
 import 'package:learn_flutter_second/tabbar/tab_bar.dart';
@@ -17,6 +19,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      locale: Locale("zh", 'CN'),
+      localizationsDelegates: [
+        DemoLocalizationsDelegate(),
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate
+      ],
+      supportedLocales: [
+        Locale("en","US"),
+        Locale("zh", 'CN'),
+      ],
       title: 'Flutter Demo',
       theme: ThemeData(
           primarySwatch: Colors.blue,
@@ -66,6 +78,17 @@ class HomePage extends StatelessWidget {
             ListItem("popupMenuButton"),
             ListItem("radio"),
             ListItem("simpleDialog"),
+            ListItem("slider"),
+            ListItem("sliver"),
+            ListItem("snackBar"),
+            ListItem("stepper"),
+            ListItem("switch"),
+            ListItem("girdView"),
+            ListItem("pageView"),
+            ListItem("animation"),
+            ListItem("bloc"),
+            ListItem("http"),
+            ListItem("locale"),
           ],
         ),
       ),

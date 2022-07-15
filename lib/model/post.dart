@@ -12,6 +12,15 @@ class Post {
   final String description;
 
   bool selected = false;
+
+
+  factory Post.fromJson(Map<String, dynamic> json) => Post(
+    title: json['title'].toString(),
+    author: json['author'].toString(),
+    imageUrl: json['imageUrl'].toString(),
+    description: json['description'].toString(),
+  );
+
 }
 
 final List<Post> posts = [

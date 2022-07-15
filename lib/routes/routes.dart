@@ -1,13 +1,22 @@
+import 'package:learn_flutter_second/demo/animation_demo.dart';
 import 'package:learn_flutter_second/demo/basic_demo.dart';
+import 'package:learn_flutter_second/demo/bloc_demo.dart';
 import 'package:learn_flutter_second/demo/check_box_demo.dart';
 import 'package:learn_flutter_second/demo/chip_demo.dart';
 import 'package:learn_flutter_second/demo/data_table_demo.dart';
 import 'package:learn_flutter_second/demo/date_time_demo.dart';
 import 'package:learn_flutter_second/demo/expansion_panel_demo.dart';
 import 'package:learn_flutter_second/demo/float_action_button_demo.dart';
+import 'package:learn_flutter_second/demo/http_demo.dart';
+import 'package:learn_flutter_second/demo/pageview_demo.dart';
 import 'package:learn_flutter_second/demo/paginated_data_table_demo.dart';
 import 'package:learn_flutter_second/demo/richtext_demo.dart';
 import 'package:learn_flutter_second/demo/simple_dialog_demo.dart';
+import 'package:learn_flutter_second/demo/slider_demo.dart';
+import 'package:learn_flutter_second/demo/snack_bar_demo.dart';
+import 'package:learn_flutter_second/demo/stepper_demo.dart';
+import 'package:learn_flutter_second/demo/switch_demo.dart';
+import 'package:learn_flutter_second/demo/view_demo.dart';
 
 import '../bottom_navigator/bottom_navigator_bar.dart';
 import '../demo/alert_dialog.dart';
@@ -17,8 +26,10 @@ import '../demo/card_demo.dart';
 import '../demo/form_demo.dart';
 import '../demo/layout_demo.dart';
 import '../demo/listview_demo.dart';
+import '../demo/localizations_demo.dart';
 import '../demo/pop_menu_button_demo.dart';
 import '../demo/radio_demo.dart';
+import '../demo/sliver_demo.dart';
 import '../demo/text_field_demo.dart';
 import '../drawer/drawer_demo.dart';
 import '../tabbar/tab_bar.dart';
@@ -47,4 +58,16 @@ var routes = {
   "/popupMenuButton": (context) => PopupMenuButtonDemo(),
   "/radio": (context) => RadioDemo(),
   "/simpleDialog": (context) => SimpleDialogDemo(),
+  "/slider": (context) => SliderDemo(),
+  "/sliver": (context) => SliverDemo(),
+  "/snackBar": (context) => SnackBarDemo(),
+  "/stepper": (context) => StepperDemo(),
+  "/switch": (context) => SwitchDemo(),
+  "/girdView": (context) => ViewDemo(),
+  "/pageView": (context) => PageViewBuilderDemo(),
+  "/animation": (context) => AnimationDemo(),
+  "/bloc": (context) => BlocDemo(),
+  "/http": (context) => HttpDemo(),
+  "/http": (context) => HttpDemo(),
+  "/locale": (context) => I18nDemo(),
 };
