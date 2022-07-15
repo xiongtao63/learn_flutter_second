@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:learn_flutter_second/demo/basic_demo.dart';
@@ -21,9 +22,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       locale: Locale("zh", 'CN'),
       localizationsDelegates: [
-        DemoLocalizationsDelegate(),
+        GlobalCupertinoLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate
+        GlobalWidgetsLocalizations.delegate,
+        DemoLocalizationsDelegate()
       ],
       supportedLocales: [
         Locale("en","US"),
@@ -89,6 +91,9 @@ class HomePage extends StatelessWidget {
             ListItem("bloc"),
             ListItem("http"),
             ListItem("locale"),
+            ListItem("rxdart"),
+            ListItem("state"),
+            ListItem("stream"),
           ],
         ),
       ),

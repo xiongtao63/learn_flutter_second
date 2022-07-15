@@ -14,6 +14,7 @@ import 'package:learn_flutter_second/demo/richtext_demo.dart';
 import 'package:learn_flutter_second/demo/simple_dialog_demo.dart';
 import 'package:learn_flutter_second/demo/slider_demo.dart';
 import 'package:learn_flutter_second/demo/snack_bar_demo.dart';
+import 'package:learn_flutter_second/demo/state_manager_demo.dart';
 import 'package:learn_flutter_second/demo/stepper_demo.dart';
 import 'package:learn_flutter_second/demo/switch_demo.dart';
 import 'package:learn_flutter_second/demo/view_demo.dart';
@@ -29,7 +30,9 @@ import '../demo/listview_demo.dart';
 import '../demo/localizations_demo.dart';
 import '../demo/pop_menu_button_demo.dart';
 import '../demo/radio_demo.dart';
+import '../demo/rxdart_demo.dart';
 import '../demo/sliver_demo.dart';
+import '../demo/stream_demo.dart';
 import '../demo/text_field_demo.dart';
 import '../drawer/drawer_demo.dart';
 import '../tabbar/tab_bar.dart';
@@ -70,4 +73,7 @@ var routes = {
   "/http": (context) => HttpDemo(),
   "/http": (context) => HttpDemo(),
   "/locale": (context) => I18nDemo(),
+  "/rxdart": (context) => RxDartDemo(),
+  "/state": (context) => StateManagementDemo(),
+  "/stream": (context) => StreamDemo(),
 };
