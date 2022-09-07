@@ -28,7 +28,7 @@ class _TestDemoHomeState extends State<TestDemoHome> {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Chip(label: Text("hello")),
+        Chip(label: Text("hello demo")),
         ActionChip(
           key: Key("actionChip"),
             label: Text('$count', key: Key('actionChipLabelText')),
