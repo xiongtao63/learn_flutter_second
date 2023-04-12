@@ -7,7 +7,9 @@ import 'package:learn_flutter_second/demo/data_table_demo.dart';
 import 'package:learn_flutter_second/demo/date_time_demo.dart';
 import 'package:learn_flutter_second/demo/expansion_panel_demo.dart';
 import 'package:learn_flutter_second/demo/float_action_button_demo.dart';
+import 'package:learn_flutter_second/demo/future_demo.dart';
 import 'package:learn_flutter_second/demo/http_demo.dart';
+import 'package:learn_flutter_second/demo/opacity_demo.dart';
 import 'package:learn_flutter_second/demo/pageview_demo.dart';
 import 'package:learn_flutter_second/demo/paginated_data_table_demo.dart';
 import 'package:learn_flutter_second/demo/richtext_demo.dart';
@@ -18,13 +20,23 @@ import 'package:learn_flutter_second/demo/state_manager_demo.dart';
 import 'package:learn_flutter_second/demo/stepper_demo.dart';
 import 'package:learn_flutter_second/demo/switch_demo.dart';
 import 'package:learn_flutter_second/demo/view_demo.dart';
+import 'package:learn_flutter_second/demo/wrap_demo.dart';
+import 'package:learn_flutter_second/provider/change_notifier_provider_demo.dart';
+import 'package:learn_flutter_second/provider/index.dart';
+import 'package:learn_flutter_second/provider/provider_demo.dart';
 
 import '../bottom_navigator/bottom_navigator_bar.dart';
+import '../comsumer/InheritedContext_demo.dart';
+import '../comsumer/consumer_demo.dart';
+import '../comsumer/index.dart';
+import '../comsumer/provider_of_demo.dart';
+import '../comsumer/selector_demo.dart';
 import '../demo/alert_dialog.dart';
 import '../demo/bottom_sheet_demo.dart';
 import '../demo/botton_demo.dart';
 import '../demo/card_demo.dart';
 import '../demo/form_demo.dart';
+import '../demo/keep_alive.dart';
 import '../demo/layout_demo.dart';
 import '../demo/listview_demo.dart';
 import '../demo/localizations_demo.dart';
@@ -35,6 +47,11 @@ import '../demo/sliver_demo.dart';
 import '../demo/stream_demo.dart';
 import '../demo/text_field_demo.dart';
 import '../drawer/drawer_demo.dart';
+import '../provider/change_notifier_proxy_provider_demo.dart';
+import '../provider/future_provider_demo.dart';
+import '../provider/multi_provider_demo.dart';
+import '../provider/proxy_provider_demo.dart';
+import '../provider/stream_provider_demo.dart';
 import '../tabbar/tab_bar.dart';
 
 var routes = {
@@ -76,4 +93,21 @@ var routes = {
   "/rxdart": (context) => RxDartDemo(),
   "/state": (context) => StateManagementDemo(),
   "/stream": (context) => StreamDemo(),
+  "/keepAliveAndTopBar": (context) => KeepAlivePage(),
+  "/wrap": (context) => WrapDemo(),
+  "/opacity": (context) => OpacityDemo(),
+  "/future": (context) => FutureDemo(),
+  "/provider": (context) => ProviderIndexPage(),
+  "/providerDemo": (context) => ProviderDemo(),
+  "/changeNotifierProviderDemo": (context) => ChangeNotifierProviderDemo(),
+  "/futureProviderDemo": (context) => FutureProviderDemo(),
+  "/streamProviderDemo": (context) => StreamProviderDemo(),
+  "/multiProviderDemo": (context) => MultiProviderDemo(),
+  "/proxyProviderDemo": (context) => ProxyProviderDemo(),
+  "/changeNotifierProxyProviderDemo": (context) => ChangeNotifierProxyProviderDemo(),
+  "/consumer": (context) => ConsumerIndexPage(),
+  "/providerOfDemo": (context) => ProviderOfDemo(),
+  "/consumerDemo": (context) => ConsumerDemo(),
+  "/selectorDemo": (context) => SelectorDemo(),
+  "/inheritedContextDemo": (context) => InheritedContextDemo(),
 };
